@@ -46,9 +46,17 @@ try:
 
 
     # Dynamically printing all the data from the response
-    print(f"Temperature: {temp_celsius}\nFeels like: {feels_like_celsius}\nWind speed: {wind_speed}\nHumidity: {humidity}\nDescription: {description}\nSunrise: {sunrise_time}\nSunset: {sunset_time}")
+
+    print(f"Temperature in {CITY}: {temp_celsius}°C")
+    print(f"Temperature in {CITY} feels like: {feels_like_celsius}°C")
+    print(f"Wind speed in {CITY}: {wind_speed}m/s")
+    print(f"Humidity in {CITY}: {humidity}%")
+    print(f"General Weather in {CITY}: {description}")
+    print(f"Sun rises in {CITY} at {sunrise_time} local time")
+    print(f"Sun sets in {CITY} at {sunset_time} local time")
 
 
 # Dynamically returning the error message on any ERROR
 except :
     print(f"Error: {response['message']}")
+    
